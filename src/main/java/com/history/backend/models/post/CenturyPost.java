@@ -1,6 +1,4 @@
-package com.history.backend.models.database;
-
-import java.util.List;
+package com.history.backend.models.post;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,6 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Set {
-    private List<Square> squares;
+public class CenturyPost {
+    private int number;
+    private String roman;
 }
