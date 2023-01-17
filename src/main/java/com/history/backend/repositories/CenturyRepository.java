@@ -6,4 +6,5 @@ import com.history.backend.models.database.Century;
 
 public interface CenturyRepository extends MongoRepository<Century, String> {
     
+    Century findByNumber(int number);
 }

@@ -28,11 +28,7 @@ import com.history.backend.services.CenturyService;
 @CrossOrigin
 @RequestMapping("/century")
 public class CenturyControler {
-    private static final String WRONG_JSON = "Wrong JSON";
-    private static final String PLAYERS_NAME = "Both players should have a distinct name";
-    private static final String NOT_FOUND = "Game doesn't exist";
-    private static final String CONFLICT_POSITION = "Impossible move";
-    private static final String GAME_OVER = "The game is already over";
+    private static final String NOT_FOUND = "Century doesn't exist";
 
     @Autowired
     private CenturyService centuryService;
@@ -42,31 +38,37 @@ public class CenturyControler {
         return new ResponseEntity<>(centuryService.getAllCenturies(), HttpStatus.OK);
     }
 
-    // @GetMapping("/search")
-    // ResponseEntity<List<Century>> getAllGamesByName(@RequestParam String name) {
-    //     return new ResponseEntity<>(centuryService.getAllGamesByName(name), HttpStatus.OK);
-    // }
+    @GetMapping("/search")
+    ResponseEntity<Century> getCenturyByNumber(@RequestParam(required = true) String number) {
+        Century century = centuryService.getCenturyByNumber(number);
+        if (century == null) {
+            return new ResponseEntity<>(null, centuryService.header(NOT_FOUND), HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(century, HttpStatus.OK);
+    }
 
-    // @GetMapping("/{id}")
-    // ResponseEntity<Century> getGame(@PathVariable String id) {
-    //     Century game = centuryService.getGame(id);
-    //     if (game == null) {
-    //         return new ResponseEntity<>(null, centuryService.header(NOT_FOUND), HttpStatus.NOT_FOUND);
-    //     }
-    //     return new ResponseEntity<>(game, HttpStatus.OK);
-    // }
+    @GetMapping("/search_between")
+    ResponseEntity<List<Century>> getCenturyBetween(@RequestParam(required = true) String begin, @RequestParam(required = true) String end) {
+        return new ResponseEntity<>(centuryService.getCenturyBetween(begin, end), HttpStatus.OK);
+    }
+
+    @GetMapping("/{id}")
+    ResponseEntity<Century> getCentury(@PathVariable String id) {
+        Century century = centuryService.getCentury(id);
+        if (century == null) {
+            return new ResponseEntity<>(null, centuryService.header(NOT_FOUND), HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(century, HttpStatus.OK);
+    }
     
     @PostMapping("/")
     ResponseEntity<Century> createCentury(@RequestBody CenturyPost centuryPost) {
-        // if (centuryService.isWrongGameJSON(gamePostRequest)) {
-        //     return new ResponseEntity<>(null, centuryService.header(WRONG_JSON), HttpStatus.BAD_REQUEST);
-        // }
-        // if (StringUtils.isBlank(gamePostRequest.getPlayer1()) || StringUtils.isBlank(gamePostRequest.getPlayer2())
-        //         || StringUtils.equals(gamePostRequest.getPlayer1(), gamePostRequest.getPlayer2())) {
-        //     return new ResponseEntity<>(null, centuryService.header(PLAYERS_NAME), HttpStatus.METHOD_NOT_ALLOWED);
-        // }
-        // Century game = centuryService.initGame(gamePostRequest);
         return new ResponseEntity<>(centuryService.createCentury(centuryPost), HttpStatus.CREATED);
+    }
+    
+    @PostMapping("/many")
+    ResponseEntity<List<Century>> createCenturies(@RequestBody List<CenturyPost> centuryPosts) {
+        return new ResponseEntity<>(centuryService.createCenturies(centuryPosts), HttpStatus.CREATED);
     }
 
     // @PutMapping("/{id}")
@@ -121,15 +123,15 @@ public class CenturyControler {
     //     return new ResponseEntity<>(aiService.getAiPositions(centuryService.getLastPosition(game)), HttpStatus.ACCEPTED);
     // }
 
-    // @DeleteMapping("/{id}")
-    // ResponseEntity<Century> removeGame(@PathVariable String id) {
-    //     Century gameAlreadySaved = centuryService.getGame(id);
-    //     if (gameAlreadySaved == null) {
-    //         return new ResponseEntity<>(null, centuryService.header(NOT_FOUND), HttpStatus.NOT_FOUND);
-    //     }
-    //     centuryService.removeGame(id);
-    //     return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-    // }
+    @DeleteMapping("/{id}")
+    ResponseEntity<Century> removeCentury(@PathVariable String id) {
+        Century centuryAlreadySaved = centuryService.getCentury(id);
+        if (centuryAlreadySaved == null) {
+            return new ResponseEntity<>(null, centuryService.header(NOT_FOUND), HttpStatus.NOT_FOUND);
+        }
+        centuryService.removeCentury(id);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
 
     // @DeleteMapping("/")
     // ResponseEntity<Century> removeAllGame() {
