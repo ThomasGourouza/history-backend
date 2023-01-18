@@ -23,5 +23,5 @@ public class TodayLocationDetailPost {
 
     private String city;
 
-    private Image flag;
+    private String flagImageId;
 }

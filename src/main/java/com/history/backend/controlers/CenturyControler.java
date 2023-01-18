@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.history.backend.models.database.Century;
-import com.history.backend.models.database.Century;
 import com.history.backend.models.post.CenturyPost;
 import com.history.backend.services.CenturyService;
 

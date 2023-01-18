@@ -3,15 +3,12 @@ package com.history.backend.services;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Service;
 
-import com.history.backend.models.database.Century;
 import com.history.backend.models.database.Century;
 import com.history.backend.models.post.CenturyPost;
 import com.history.backend.repositories.CenturyRepository;

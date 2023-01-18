@@ -11,6 +11,11 @@ spring:
             database: history
             port: 27017
             host: localhost
+    servlet:
+        multipart:
+            max-file-size: 256MB
+            max-request-size: 256MB
+            enabled: true
 logging:
     level:
         org:

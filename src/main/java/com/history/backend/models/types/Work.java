@@ -24,7 +24,7 @@ public class Work {
 	@DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
     private LocalDate date;
 
-	private List<Image> images;
+	private List<String> imageIds;
 
 	private List<Field> fields;
     

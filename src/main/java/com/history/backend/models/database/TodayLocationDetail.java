@@ -2,7 +2,6 @@ package com.history.backend.models.database;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import com.history.backend.models.types.Image;
 import com.history.backend.models.types.enums.LocationType;
 
 import org.springframework.data.annotation.Id;
@@ -38,5 +37,5 @@ public class TodayLocationDetail {
     @TextIndexed
     private String city;
 
-    private Image flag;
+    private String flagImageId;
 }

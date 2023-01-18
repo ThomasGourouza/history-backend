@@ -3,7 +3,6 @@ package com.history.backend.models.post;
 import java.util.List;
 
 import com.history.backend.models.types.Date;
-import com.history.backend.models.types.Image;
 import com.history.backend.models.types.Location;
 import com.history.backend.models.types.enums.Field;
 import com.history.backend.models.types.enums.PeriodEventType;
@@ -30,5 +29,5 @@ public class PeriodEventPost {
 
 	private Location location;
 
-	private List<Image> images;
+	private List<String> imageIds;
 }
