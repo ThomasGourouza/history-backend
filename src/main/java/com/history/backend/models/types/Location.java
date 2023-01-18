@@ -12,7 +12,9 @@ import lombok.NoArgsConstructor;
 public class Location {
 	private String name;
 
-	private String flagUrl;
+	private Image flag;
+
+	private String wikipediaLink;
 
 	private List<String> todayLocationDetailIds;
 }

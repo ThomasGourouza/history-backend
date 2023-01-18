@@ -3,6 +3,7 @@ package com.history.backend.models.post;
 import java.util.List;
 
 import com.history.backend.models.types.Date;
+import com.history.backend.models.types.Image;
 import com.history.backend.models.types.Location;
 import com.history.backend.models.types.Work;
 import com.history.backend.models.types.enums.Field;
@@ -21,13 +22,15 @@ public class PersonalityPost {
     
 	private Location livingLocation;
 
-	private List<String> imageUrls;
+	private List<Image> images;
 
 	private List<Field> fields;
     
 	private List<Field> movement;
 
     private String description;
+
+    private String wikipediaLink;
 
 	private List<Work> works;
 }

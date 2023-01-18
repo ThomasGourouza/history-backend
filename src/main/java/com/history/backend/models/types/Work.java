@@ -24,13 +24,15 @@ public class Work {
 	@DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
     private LocalDate date;
 
-	private List<String> imageUrls;
+	private List<Image> images;
 
 	private List<Field> fields;
     
 	private List<Field> movement;
 
     private String description;
+
+	private String wikipediaLink;
 
     private Language language;
 

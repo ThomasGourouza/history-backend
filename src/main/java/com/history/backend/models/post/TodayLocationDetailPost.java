@@ -1,5 +1,6 @@
 package com.history.backend.models.post;
 
+import com.history.backend.models.types.Image;
 import com.history.backend.models.types.enums.LocationType;
 
 import lombok.AllArgsConstructor;
@@ -22,5 +23,5 @@ public class TodayLocationDetailPost {
 
     private String city;
 
-    private String flagUrl;
+    private Image flag;
 }

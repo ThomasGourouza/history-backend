@@ -7,6 +7,7 @@ import org.springframework.data.mongodb.core.index.TextIndexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.history.backend.models.types.Date;
+import com.history.backend.models.types.Image;
 import com.history.backend.models.types.Location;
 import com.history.backend.models.types.enums.Field;
 import com.history.backend.models.types.Work;
@@ -30,7 +31,7 @@ public class Personality {
     
 	private Location livingLocation;
 
-	private List<String> imageUrls;
+	private List<Image> images;
 
 	private List<Field> fields;
     
@@ -38,6 +39,8 @@ public class Personality {
 
 	@TextIndexed
     private String description;
+
+    private String wikipediaLink;
 
 	private List<Work> works;
 }
