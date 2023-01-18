@@ -7,7 +7,6 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import com.history.backend.models.types.enums.Field;
 import com.history.backend.models.types.enums.Language;
-import com.history.backend.models.types.enums.WorkType;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -19,8 +18,6 @@ import lombok.NoArgsConstructor;
 public class Work {
     private String name;
 
-    private WorkType type;
-
 	@DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
     private LocalDate date;
 
@@ -28,11 +25,11 @@ public class Work {
 
 	private List<Field> fields;
     
-	private List<Field> movement;
+	private List<String> periodEventIds;
 
     private String description;
 
-	private String wikipediaLink;
+	private List<String> links;
 
     private Language language;
 

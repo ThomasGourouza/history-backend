@@ -32,7 +32,7 @@ public class PeriodEvent {
     @TextIndexed
     private String description;
 
-    private String wikipediaLink;
+    private String link;
 
     private List<Field> fields;
 
@@ -42,5 +42,4 @@ public class PeriodEvent {
 
 	private List<String> imageIds;
 
-	private List<String> personalityIds;
 }

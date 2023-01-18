@@ -8,8 +8,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.history.backend.models.types.Date;
 import com.history.backend.models.types.Location;
-import com.history.backend.models.types.enums.Field;
-import com.history.backend.models.types.enums.Movement;
 import com.history.backend.models.types.Work;
 
 import lombok.AllArgsConstructor;
@@ -39,14 +37,10 @@ public class Personality {
 
 	private List<String> imageIds;
 
-	private List<Field> fields;
-    
-	private List<Movement> movement;
-
 	@TextIndexed
     private String description;
 
-    private String wikipediaLink;
+    private String link;
 
 	private List<Work> works;
 }

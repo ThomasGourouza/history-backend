@@ -164,7 +164,7 @@ Post
 	"type": "PERIOD",
 	"name": "Test",
 	"description": "",
-	"wikipediaLink": "link",
+	"link": "link",
 	"fields": [
 		"LITTERATURE",
 		"SCIENCE"
@@ -215,7 +215,7 @@ Post
 	],
 	"movement": [],
 	"description": "",
-	"wikipediaLink": "link",
+	"link": "link",
 	"works": [
 		{
 			"name": "Test",
@@ -227,7 +227,7 @@ Post
 			],
 			"movement": [],
 			"description": "",
-			"wikipediaLink": "link",
+			"link": "link",
 			"language": "FRENCH"
 		}
 	]
