@@ -27,9 +27,9 @@ public class PeriodEventService {
         return periodEventRepository.save(periodEvent);
     }
 
-    // public PeriodEvent getGame(String id) {
-    //     return periodEventRepository.findById(id).orElse(null);
-    // }
+    public PeriodEvent getPeriodEvent(String id) {
+        return periodEventRepository.findById(id).orElse(null);
+    }
 
     // public List<PeriodEvent> getAllGamesByName(String name) {
     //     if (StringUtils.isBlank(name)) {
@@ -50,18 +50,18 @@ public class PeriodEventService {
     //     return periodEventRepository.save(game);
     // }
 
-    // public void removeGame(String id) {
-    //     periodEventRepository.deleteById(id);
-    // }
+    public void removePeriodEvent(String id) {
+        periodEventRepository.deleteById(id);
+    }
 
     // public void removeAllGames() {
     //     periodEventRepository.deleteAll();
     // }
 
-    // public HttpHeaders header(String message) {
-    //     HttpHeaders responseHeaders = new HttpHeaders();
-    //     responseHeaders.add(ERROR_MESSAGE, message);
-    //     return responseHeaders;
-    // }
+    public HttpHeaders header(String message) {
+        HttpHeaders responseHeaders = new HttpHeaders();
+        responseHeaders.add(ERROR_MESSAGE, message);
+        return responseHeaders;
+    }
     
 }

@@ -1,4 +1,6 @@
-# history-backend
+## history-backend
+
+# century:
 
 Get:
 - http://localhost:8080/century/
@@ -146,3 +148,85 @@ Post
 		"roman": "XXII"
 	}
 ]
+
+# period_event:
+
+Get:
+- http://localhost:8080/period_event/
+- http://localhost:8080/period_event/63c7e5f4b60766202078ba7d
+
+Delete
+- http://localhost:8080/period_event/63c7e5f4b60766202078ba7d
+
+Post
+- http://localhost:8080/period_event/
+{
+	"type": "PERIOD",
+	"name": "Test",
+	"description": "",
+	"wikipediaLink": "link",
+	"fields": [
+		"LITTERATURE",
+		"SCIENCE"
+	],
+	"date": {
+		"begin": null,
+		"end": null
+	},
+	"location": {
+		"name": "Location",
+		"flagImageId": "",
+		"todayLocationDetailIds": []
+	},
+	"imageIds": [],
+	"personalityIds": []
+}
+
+# personality:
+
+Get:
+- http://localhost:8080/personality/
+- http://localhost:8080/personality/63c7e5f4b60766202078ba7d
+
+Delete
+- http://localhost:8080/personality/63c7e5f4b60766202078ba7d
+
+Post
+- http://localhost:8080/personality/
+{
+	"firstname": "Test",
+	"lastname": "Test",
+	"nickname": "Test",
+	"date": {
+		"begin": null,
+		"end": null
+	},
+	"livingLocation": {
+		"name": "Location",
+		"flagImageId": "",
+		"todayLocationDetailIds": []
+	},
+	"imageIds": [],
+	"fields": [
+		"LITTERATURE",
+		"SCIENCE"
+	],
+	"movement": [],
+	"description": "",
+	"wikipediaLink": "link",
+	"works": [
+		{
+			"name": "Test",
+			"type": "BOOK",
+			"date": null,
+			"imageIds": [],
+			"fields": [
+				"LITTERATURE"
+			],
+			"movement": [],
+			"description": "",
+			"wikipediaLink": "link",
+			"language": "FRENCH"
+		}
+	]
+}

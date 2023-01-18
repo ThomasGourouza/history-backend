@@ -24,7 +24,7 @@ import com.history.backend.services.PeriodEventService;
 
 @RestController
 @CrossOrigin
-@RequestMapping("/period-event")
+@RequestMapping("/period_event")
 public class PeriodEventControler {
     private static final String WRONG_JSON = "Wrong JSON";
     private static final String PLAYERS_NAME = "Both players should have a distinct name";
@@ -45,14 +45,14 @@ public class PeriodEventControler {
     //     return new ResponseEntity<>(periodEventService.getAllPeriodEventsByName(name), HttpStatus.OK);
     // }
 
-    // @GetMapping("/{id}")
-    // ResponseEntity<PeriodEvent> getPeriodEvent(@PathVariable String id) {
-    //     PeriodEvent periodEvent = periodEventService.getPeriodEvent(id);
-    //     if (periodEvent == null) {
-    //         return new ResponseEntity<>(null, periodEventService.header(NOT_FOUND), HttpStatus.NOT_FOUND);
-    //     }
-    //     return new ResponseEntity<>(periodEvent, HttpStatus.OK);
-    // }
+    @GetMapping("/{id}")
+    ResponseEntity<PeriodEvent> getPeriodEvent(@PathVariable String id) {
+        PeriodEvent periodEvent = periodEventService.getPeriodEvent(id);
+        if (periodEvent == null) {
+            return new ResponseEntity<>(null, periodEventService.header(NOT_FOUND), HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(periodEvent, HttpStatus.OK);
+    }
     
     @PostMapping("/")
     ResponseEntity<PeriodEvent> createPeriodEvent(@RequestBody PeriodEvent periodEvent) {
@@ -111,15 +111,15 @@ public class PeriodEventControler {
     //     return new ResponseEntity<>(aiService.getAiPositions(periodEventService.getLastPosition(periodEvent)), HttpStatus.ACCEPTED);
     // }
 
-    // @DeleteMapping("/{id}")
-    // ResponseEntity<PeriodEvent> removePeriodEvent(@PathVariable String id) {
-    //     PeriodEvent periodEventAlreadySaved = periodEventService.getPeriodEvent(id);
-    //     if (periodEventAlreadySaved == null) {
-    //         return new ResponseEntity<>(null, periodEventService.header(NOT_FOUND), HttpStatus.NOT_FOUND);
-    //     }
-    //     periodEventService.removePeriodEvent(id);
-    //     return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-    // }
+    @DeleteMapping("/{id}")
+    ResponseEntity<PeriodEvent> removePeriodEvent(@PathVariable String id) {
+        PeriodEvent periodEventAlreadySaved = periodEventService.getPeriodEvent(id);
+        if (periodEventAlreadySaved == null) {
+            return new ResponseEntity<>(null, periodEventService.header(NOT_FOUND), HttpStatus.NOT_FOUND);
+        }
+        periodEventService.removePeriodEvent(id);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
 
     // @DeleteMapping("/")
     // ResponseEntity<PeriodEvent> removeAllPeriodEvent() {

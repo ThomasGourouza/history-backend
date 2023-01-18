@@ -9,6 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import com.history.backend.models.types.Date;
 import com.history.backend.models.types.Location;
 import com.history.backend.models.types.enums.Field;
+import com.history.backend.models.types.enums.Movement;
 import com.history.backend.models.types.Work;
 
 import lombok.AllArgsConstructor;
@@ -16,7 +17,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Document
+@Document(collection = "personality")
 @NoArgsConstructor
 @AllArgsConstructor
 public class Personality {
@@ -24,7 +25,13 @@ public class Personality {
     private String id;
 
     @TextIndexed
-    private String name;
+    private String firstname;
+
+    @TextIndexed
+    private String lastname;
+
+    @TextIndexed
+    private String nickname;
 
 	private Date date;
     
@@ -34,7 +41,7 @@ public class Personality {
 
 	private List<Field> fields;
     
-	private List<Field> movement;
+	private List<Movement> movement;
 
 	@TextIndexed
     private String description;

@@ -16,7 +16,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Document
+@Document(collection = "period_event")
 @NoArgsConstructor
 @AllArgsConstructor
 public class PeriodEvent {

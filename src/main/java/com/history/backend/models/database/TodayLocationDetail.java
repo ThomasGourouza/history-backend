@@ -12,7 +12,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Document
+@Document(collection = "today_location_detail")
 @NoArgsConstructor
 @AllArgsConstructor
 public class TodayLocationDetail {
