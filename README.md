@@ -175,6 +175,7 @@ Post
 	},
 	"location": {
 		"name": "Location",
+		"description": "",
 		"flagImageId": "",
 		"todayLocationDetailIds": []
 	},
@@ -202,7 +203,8 @@ Post
 		"end": null
 	},
 	"livingLocation": {
-		"name": "Location",
+		"name": "name",
+		"description": "",
 		"flagImageId": "",
 		"todayLocationDetailIds": []
 	},
@@ -229,4 +231,21 @@ Post
 			"language": "FRENCH"
 		}
 	]
+}
+
+# TodayLocationDetail:
+
+Get:
+- http://localhost:8080/today_location_detail/
+- http://localhost:8080/today_location_detail/63c7e5f4b60766202078ba7d
+
+Delete
+- http://localhost:8080/today_location_detail/63c7e5f4b60766202078ba7d
+
+Post
+- http://localhost:8080/today_location_detail/
+{
+	"continent": "test",
+	"country": "test",
+	"flagImageId": null
 }
