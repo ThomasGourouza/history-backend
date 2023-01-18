@@ -1,6 +1,5 @@
 package com.history.backend.models.post;
 
-import com.history.backend.models.types.Image;
 import com.history.backend.models.types.enums.LocationType;
 
 import lombok.AllArgsConstructor;
