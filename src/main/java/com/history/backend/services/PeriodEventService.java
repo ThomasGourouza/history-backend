@@ -8,6 +8,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Service;
 
 import com.history.backend.models.database.PeriodEvent;
+import com.history.backend.models.types.enums.PeriodEventType;
 import com.history.backend.repositories.PeriodEventRepository;
 
 @Service
@@ -20,6 +21,10 @@ public class PeriodEventService {
 
     public List<PeriodEvent> getAllPeriodEvents() {
         return periodEventRepository.findAll();
+    }
+
+    public PeriodEvent createPeriodEvent(PeriodEvent periodEvent) {
+        return periodEventRepository.save(periodEvent);
     }
 
     // public PeriodEvent getGame(String id) {

@@ -14,7 +14,5 @@ public class Location {
 
 	private String flagImageId;
 
-	private String wikipediaLink;
-
 	private List<String> todayLocationDetailIds;
 }

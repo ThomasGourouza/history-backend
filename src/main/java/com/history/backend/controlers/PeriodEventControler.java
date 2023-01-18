@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.history.backend.models.database.PeriodEvent;
-import com.history.backend.models.post.CenturyPost;
 import com.history.backend.services.PeriodEventService;
 
 @RestController
@@ -29,9 +28,9 @@ import com.history.backend.services.PeriodEventService;
 public class PeriodEventControler {
     private static final String WRONG_JSON = "Wrong JSON";
     private static final String PLAYERS_NAME = "Both players should have a distinct name";
-    private static final String NOT_FOUND = "Game doesn't exist";
+    private static final String NOT_FOUND = "PeriodEvent doesn't exist";
     private static final String CONFLICT_POSITION = "Impossible move";
-    private static final String GAME_OVER = "The game is already over";
+    private static final String GAME_OVER = "The periodEvent is already over";
 
     @Autowired
     private PeriodEventService periodEventService;
@@ -42,97 +41,89 @@ public class PeriodEventControler {
     }
 
     // @GetMapping("/search")
-    // ResponseEntity<List<PeriodEvent>> getAllGamesByName(@RequestParam String name) {
-    //     return new ResponseEntity<>(periodEventService.getAllGamesByName(name), HttpStatus.OK);
+    // ResponseEntity<List<PeriodEvent>> getAllPeriodEventsByName(@RequestParam String name) {
+    //     return new ResponseEntity<>(periodEventService.getAllPeriodEventsByName(name), HttpStatus.OK);
     // }
 
     // @GetMapping("/{id}")
-    // ResponseEntity<PeriodEvent> getGame(@PathVariable String id) {
-    //     PeriodEvent game = periodEventService.getGame(id);
-    //     if (game == null) {
+    // ResponseEntity<PeriodEvent> getPeriodEvent(@PathVariable String id) {
+    //     PeriodEvent periodEvent = periodEventService.getPeriodEvent(id);
+    //     if (periodEvent == null) {
     //         return new ResponseEntity<>(null, periodEventService.header(NOT_FOUND), HttpStatus.NOT_FOUND);
     //     }
-    //     return new ResponseEntity<>(game, HttpStatus.OK);
+    //     return new ResponseEntity<>(periodEvent, HttpStatus.OK);
     // }
-    //
-    // @PostMapping("/")
-    // ResponseEntity<PeriodEvent> createGame(@RequestBody CenturyPost gamePostRequest) {
-    //     if (periodEventService.isWrongGameJSON(gamePostRequest)) {
-    //         return new ResponseEntity<>(null, periodEventService.header(WRONG_JSON), HttpStatus.BAD_REQUEST);
-    //     }
-    //     if (StringUtils.isBlank(gamePostRequest.getPlayer1()) || StringUtils.isBlank(gamePostRequest.getPlayer2())
-    //             || StringUtils.equals(gamePostRequest.getPlayer1(), gamePostRequest.getPlayer2())) {
-    //         return new ResponseEntity<>(null, periodEventService.header(PLAYERS_NAME), HttpStatus.METHOD_NOT_ALLOWED);
-    //     }
-    //     PeriodEvent game = periodEventService.initGame(gamePostRequest);
-    //     return new ResponseEntity<>(periodEventService.createGame(game), HttpStatus.CREATED);
-    // }
+    
+    @PostMapping("/")
+    ResponseEntity<PeriodEvent> createPeriodEvent(@RequestBody PeriodEvent periodEvent) {
+        return new ResponseEntity<>(periodEventService.createPeriodEvent(periodEvent), HttpStatus.CREATED);
+    }
 
     // @PutMapping("/{id}")
-    // ResponseEntity<PeriodEvent> putGame(@PathVariable String id, @RequestBody CenturyPost gamePutRequest) {
-    //     if (periodEventService.isWrongGameJSON(gamePutRequest)) {
+    // ResponseEntity<PeriodEvent> putPeriodEvent(@PathVariable String id, @RequestBody PeriodEvent periodEventPutRequest) {
+    //     if (periodEventService.isWrongPeriodEventJSON(periodEventPutRequest)) {
     //         return new ResponseEntity<>(null, periodEventService.header(WRONG_JSON), HttpStatus.BAD_REQUEST);
     //     }
-    //     PeriodEvent game = periodEventService.getGame(id);
-    //     if (game == null) {
+    //     PeriodEvent periodEvent = periodEventService.getPeriodEvent(id);
+    //     if (periodEvent == null) {
     //         return new ResponseEntity<>(null, periodEventService.header(NOT_FOUND), HttpStatus.NOT_FOUND);
     //     }
-    //     game.setName(gamePutRequest.getName());
-    //     game.setDescription(gamePutRequest.getDescription());
-    //     game.getPlayers().forEach(player ->
-    //         player.setName(player.getId() == 1 ? gamePutRequest.getPlayer1() : gamePutRequest.getPlayer2())
+    //     periodEvent.setName(periodEventPutRequest.getName());
+    //     periodEvent.setDescription(periodEventPutRequest.getDescription());
+    //     periodEvent.getPlayers().forEach(player ->
+    //         player.setName(player.getId() == 1 ? periodEventPutRequest.getPlayer1() : periodEventPutRequest.getPlayer2())
     //     );
-    //     return new ResponseEntity<>(periodEventService.createGame(game), HttpStatus.ACCEPTED);
+    //     return new ResponseEntity<>(periodEventService.createPeriodEvent(periodEvent), HttpStatus.ACCEPTED);
     // }
 
     // @PatchMapping("/{id}/play")
     // ResponseEntity<PeriodEvent> setPosition(@PathVariable String id, @RequestBody PositionPostRequest positionPostRequest) {
-    //     PeriodEvent game = periodEventService.getGame(id);
-    //     if (game == null) {
+    //     PeriodEvent periodEvent = periodEventService.getPeriodEvent(id);
+    //     if (periodEvent == null) {
     //         return new ResponseEntity<>(null, periodEventService.header(NOT_FOUND), HttpStatus.NOT_FOUND);
     //     }
     //     if (periodEventService.isWrongPositionJSON(positionPostRequest)) {
     //         return new ResponseEntity<>(null, periodEventService.header(WRONG_JSON), HttpStatus.BAD_REQUEST);
     //     }
-    //     if (game.isOver()) {
+    //     if (periodEvent.isOver()) {
     //         return new ResponseEntity<>(null, periodEventService.header(GAME_OVER), HttpStatus.METHOD_NOT_ALLOWED);
     //     }
-    //     Position lastPosition = periodEventService.getLastPosition(game);
+    //     Position lastPosition = periodEventService.getLastPosition(periodEvent);
     //     if (periodEventService.isconflictPosition(lastPosition, positionPostRequest)) {
     //         return new ResponseEntity<>(null, periodEventService.header(CONFLICT_POSITION), HttpStatus.CONFLICT);
     //     }
     //     Position newPosition = periodEventService.getNewPosition(
     //             lastPosition,
     //             positionPostRequest);
-    //     periodEventService.addNewPositionToGame(game, newPosition);
-    //     return new ResponseEntity<>(periodEventService.createGame(game), HttpStatus.ACCEPTED);
+    //     periodEventService.addNewPositionToPeriodEvent(periodEvent, newPosition);
+    //     return new ResponseEntity<>(periodEventService.createPeriodEvent(periodEvent), HttpStatus.ACCEPTED);
     // }
 
     // @GetMapping("/{id}/moves")
     // ResponseEntity<List<PositionPostRequest>> getAiMoves(@PathVariable String id) {
-    //     PeriodEvent game = periodEventService.getGame(id);
-    //     if (game == null) {
+    //     PeriodEvent periodEvent = periodEventService.getPeriodEvent(id);
+    //     if (periodEvent == null) {
     //         return new ResponseEntity<>(null, periodEventService.header(NOT_FOUND), HttpStatus.NOT_FOUND);
     //     }
-    //     if (game.isOver()) {
+    //     if (periodEvent.isOver()) {
     //         return new ResponseEntity<>(null, periodEventService.header(GAME_OVER), HttpStatus.METHOD_NOT_ALLOWED);
     //     }
-    //     return new ResponseEntity<>(aiService.getAiPositions(periodEventService.getLastPosition(game)), HttpStatus.ACCEPTED);
+    //     return new ResponseEntity<>(aiService.getAiPositions(periodEventService.getLastPosition(periodEvent)), HttpStatus.ACCEPTED);
     // }
 
     // @DeleteMapping("/{id}")
-    // ResponseEntity<PeriodEvent> removeGame(@PathVariable String id) {
-    //     PeriodEvent gameAlreadySaved = periodEventService.getGame(id);
-    //     if (gameAlreadySaved == null) {
+    // ResponseEntity<PeriodEvent> removePeriodEvent(@PathVariable String id) {
+    //     PeriodEvent periodEventAlreadySaved = periodEventService.getPeriodEvent(id);
+    //     if (periodEventAlreadySaved == null) {
     //         return new ResponseEntity<>(null, periodEventService.header(NOT_FOUND), HttpStatus.NOT_FOUND);
     //     }
-    //     periodEventService.removeGame(id);
+    //     periodEventService.removePeriodEvent(id);
     //     return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     // }
 
     // @DeleteMapping("/")
-    // ResponseEntity<PeriodEvent> removeAllGame() {
-    //     periodEventService.removeAllGames();
+    // ResponseEntity<PeriodEvent> removeAllPeriodEvent() {
+    //     periodEventService.removeAllPeriodEvents();
     //     return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     // }
 

@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.multipart.MultipartFile;
 
 import com.history.backend.models.database.Image;
+import com.history.backend.models.post.ImagePost;
 import com.history.backend.services.ImageService;
 
 @RestController
@@ -27,11 +27,9 @@ public class ImageControler {
 
     @PostMapping("/")
     public String addImage(
-            @RequestParam("name") String name,
-            @RequestParam("description") String description,
-            @RequestParam("image") MultipartFile image,
+            @RequestBody ImagePost imagePost,
             Model model) throws IOException {
-        String id = imageService.saveImage(name, description, image);
+        String id = imageService.saveImage(imagePost.getName(), imagePost.getDescription(), imagePost.getImage());
         return "redirect:/image/" + id;
     }
 
