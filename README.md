@@ -249,3 +249,50 @@ Post
 	"country": "test",
 	"flagImageId": null
 }
+
+
+---
+
+- L’ORGANISATION POLITIQUE ET SOCIALE
+	Les groupes sociaux
+	Les institutions et l’exercice du pouvoir
+	La justice
+	Les finances
+	Le pouvoir militaire
+	La santé et la médecine
+	L’éducation et l’école
+
+- LA VIE ÉCONOMIQUE
+	L’agriculture
+	L’artisanat
+	Le commerce
+	La monnaie
+
+- LA RELIGION
+	Les divinités païennes et fêtes païennes
+	Le christianisme et fêtes chrétiennes
+	Les églises et les monastères
+	La spiritualité
+
+- LA LITTÉRATURE
+	La langue
+	Les genres littéraires
+	Les traductions
+	Roman
+	Poesie
+	Théâtre
+
+- LA PHILOSOPHIE
+	Les courants philosophiques
+
+- LA SCIENCE
+	Les mathématiques et la logique
+	La science
+
+- LES ARTS
+	L’architecture
+	Les arts appliqués
+	tableaux
+	courants artistiques
+	musique
+	courants musicaux
