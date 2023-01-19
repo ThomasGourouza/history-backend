@@ -10,3 +10,624 @@ Grece
 europe ouest-central dont portugal, espagne, france, allemagne, Italie...
 
 ...
+
+
+
+- philosophie
+- science (physique, chimie, médecine, astronomie)
+- mathématique
+- logique
+- métaphysique
+- politique
+- sociologie
+
+- informatique
+- joueurs d'échecs
+- contemporains importants (chevaliers, rois, aventuriers, croisés, sportifs, artistes...)
+- littérature (roman, poésie, théâtre)
+- films
+- musique
+
+-> voir ce qui se passait dans chaque région du monde pour chaque demi-siècles
+
+français
+allemand
+autrichien
+italien
+espagnol
+portugais
+européen
+américain
+anglais
+irlandais
+écossais
+anglo-saxon
+russe
+sovietique
+slave
+europe de l'est
+chinois
+indien
+asiatique
+africain
+arabe
+
+
+antiquité (en français)
+
+les grand auteurs classiques français (en français)
+
+
+
+
+    Homère (8ème siècle av. J.-C.) - Poète grec connu pour ses épopées, l'Iliade et l'Odyssée.
+    Sophocle (496-406 av. J.-C.) - Dramaturge grec connu pour ses tragédies, notamment Électre et Antigone.
+    Platon (427-347 av. J.-C.) - Philosophe grec qui a fondé l'Académie de Platon à Athènes.
+    Aristote (384-322 av. J.-C.) - Philosophe grec qui a enseigné à Alexandre le Grand et qui a influencé de nombreux philosophes occidentaux.
+    Euripide (480-406 av. J.-C.) - Dramaturge grec connu pour ses tragédies, notamment Médée et Les Bacchantes.
+    Démocrite (460-370 av. J.-C.) - Philosophe grec qui a proposé une théorie atomique de la matière.
+    Hippocrate (environ 460-375 av. J.-C.) - Médecin grec considéré comme le "père de la médecine".
+    Socrate (469-399 av. J.-C.) - Philosophe grec qui a enseigné par le dialogue et qui est connu pour avoir dit "Je sais que je ne sais rien".
+    Hérodote (484-425 av. J.-C.) - Historien grec connu pour son ouvrage, L'Enquête, qui relate l'histoire des guerres médiques.
+    Archimède (287-212 av. J.-C.) - Mathématicien et ingénieur grec connu pour ses contributions à l'hydrostatique et à la mécanique.
+    Galien (129-216) - Médecin grec qui a exercé une grande influence sur la médecine occidentale pendant des siècles.
+    Ptolémée (90-168) - Astronome, mathématicien et géographe grec connu pour son ouvrage, l'Almageste, qui a été utilisé pendant des siècles comme principal livre d'astronomie.
+    Leucippe (environ 450 av. J.-C.) - Philosophe grec qui a fondé l'école de l'éléatisme.
+    Epicure (341-270 av. J.-C.) - Philosophe grec qui a fondé l'école d'épicurisme.
+    Strabon (64 av. J.-C. - environ 24 apr. J.-C.) - Géographe et historien grec connu pour son ouvrage, la Géographie, qui est considéré comme l'un des ouvrages de
+
+
+
+    --- auteurs
+
+    Homère
+    Sophocle
+    Platon
+    Aristote
+    Euripide
+    Démocrite
+    Hippocrate
+    Socrate
+    Hérodote
+    Archimède
+    Galien
+    Ptolémée
+    Leucippe
+    Epicure
+    Strabon
+    Lysias
+    Chrysippe
+    Xénophon
+    Théophraste
+    Diogène Laërce
+    Anaximandre
+    Anaximène
+    Protagoras
+    Gorgias
+    Empédocle
+    Anaxagore
+    Parménide
+    Zénon d'Élée
+    Hésiode
+    Alcée
+    Sappho
+    Simonide
+    Pindare
+    Bion de Borysthène
+    Callimaque
+    Lycophron
+    Timothée de Milet
+    Théocrite
+    Apollonius de Rhodes
+    Quinte-Curce
+    Diodore de Sicile
+    Justin
+    Tite-Live
+    Suétone
+    Pline l'Ancien
+    Dion Cassius
+    Appien
+    Lucain
+    Salluste
+    Tacite
+    Polybe
+    Plutarque
+    Porphyre
+    Ammien Marcellin
+    Épictète
+    Marc Aurèle
+    Clément d'Alexandrie
+    Origène
+    Théodoret de Cyr
+    Jean Chrysostome
+    Augustin d'Hippone
+    Boèce
+    Isidore de Séville
+    Jean de Salisbury
+    Thomas d'Aquin
+    Duns Scot
+    Guillaume d'Ockham
+    Jean Gerson
+    Nicolas de Cues
+    Marsile de Padoue
+    William of Conches
+    Pierre Abelard
+    Bernard de Clairvaux
+    Albert le Grand
+    Thomas de Aquino
+    Duns Scot
+    Guillaume d'Ockham
+    Jean Gerson
+    Nicolas de Cues
+    Marsile de Padoue
+    William of Conches
+    Pierre Abelard
+    Bernard de Clairvaux
+    Albert le Grand
+    Roger Bacon
+    Duns Scot
+    Guillaume d'Ockham
+    Jean Gerson
+    Nicolas de Cues
+    Marsile de Padoue
+    William of Conches
+    Pierre Abelard
+    Bernard de Clairvaux
+    Albert le Grand
+    Thomas Bradwardine
+    Jean Buridan
+    Nicole Oresme
+    Jean de Jandun
+    Jean Duns Scot
+    Guillaume d'Ockham
+
+    --- hommes
+
+    Alexandre le Grand
+    Platon
+    Aristote
+    Socrate
+    Pythagore
+    Hippocrate
+    Démosthène
+    Archimède
+    Épictète
+    César Auguste
+    Hérodote
+    Thucydide
+    Euclide
+    Sophocle
+    Euripide
+    Xénophon
+    Aristophane
+    Lysias
+    Pindare
+    Strabon
+    Aeschylus
+    Caton l'Ancien
+    Plutarque
+    Marc Aurèle
+    Térence
+    Virgile
+    Horace
+    Ovidius
+    Apollonius de Rhodes
+    Callimaque
+    Clément d'Alexandrie
+    Philo de Byzance
+    Philon d'Alexandrie
+    Pline l'Ancien
+    Tacite
+    Galien
+    Isocrate
+    Nicomaque d'Éphèse
+    Pausanias
+    Théophraste
+    Zénon de Cittium
+    Agathias
+    Anaxagore
+    Chrysippe
+    Diodore de Sicile
+    Diogène Laërce
+    Hécatée de Milet
+    Lucien
+    Marcellus Empiricus
+    Nicéphore Callisthène
+
+    --- politique
+
+    Alexandre le Grand
+    Platon
+    Socrate
+    Aristote
+    Auguste
+    Cicéron
+    Jules César
+    Constantin Ier
+    Hadrien
+    Antoine
+    Périclès
+    Démosthène
+    Thémistocle
+    Alcibiade
+    Xénophon
+    Scipion l'Africain
+    Pyrrhus
+    Lucius Verus
+    Lucius Aemilius Paullus
+    Titus Flavius Vespasianus (Vespasien)
+
+    --- science
+
+    Pythagore
+    Archimède
+    Euclide
+    Hippocrate
+    Galien
+    Ptolémée
+    Thalès
+    Anaximandre
+    Anaximène
+    Xénophane
+    Héraclite
+    Parménide
+    Empédocle
+    Anaxagore
+    Leucippe
+    Démocrite
+    Asclépios
+    Nicomaque
+    Eudoxe
+    Callimaque
+
+--- maths
+
+    Pythagore
+    Euclide
+    Archimède
+    Apollonius de Perge
+    Diophante
+    Thalès
+    Hippase de Mégare
+    Theodorus de Cyrène
+    Nicomaque
+    Ptolémée
+    Eudoxe
+    Callimaque
+    Hypathie
+    Sosigène de Cappadoce
+    Menaechmus
+    Dinostrate
+    Conon d'Alexandrie
+    Eutocius d'Ascalon
+    Dioclès de Caryste
+    Marinus de Neapolis
+
+    --- philosophie
+
+    Platon
+    Socrate
+    Aristote
+    Epicure
+    Zénon de Cittium
+    Pyrrhon
+    Chrysippe
+    Anaximandre
+    Anaximène
+    Héraclite
+    Parménide
+    Empédocle
+    Anaxagore
+    Leucippe
+    Démocrite
+    Protagoras
+    Diogène de Sinope
+    Cléanthe
+    Xénophane
+    Héraclès d'Élis
+
+--- sociologie
+
+    Platon
+    Aristote
+    Socrate
+    Hippocrate
+    Démocrite
+    Euclide
+    Archimède
+    Galien
+    Ptolémée
+    Plotin
+    Sénèque
+    Épicure
+    Théophraste
+    Anaxagore
+    Hippias
+    Diogène de Sinope
+    Xénophon
+    Hérodote
+    Sophocle
+    Eschyle
+
+--- theatre
+
+    Sophocle
+    Euripide
+    Aristote
+    Aeschylus
+    Eschyle
+    Plaute
+    Tragopon
+    Hérodote
+    Lucain
+    Sénèque
+    Sophron
+    Philon
+    Timée
+    Térence
+    Xénophon
+    Pindare
+    Homère
+    Hésiode
+    Homère
+    Archiloque
+
+    Eschyle
+    Sophocle
+    Euripide
+    Aristophane
+    Ménandre
+    Aischylos
+    Théocrite
+    Phrynichos
+    Anaxandrides
+    Pindare
+    Agathon
+    Démocrite
+    Démosthène
+    Xénophon
+    Platon
+    Arétin
+    Térence
+    Plaute
+    Sénèque
+    Ovidius Naso
+
+--- littérature
+
+    Homère
+    Sophocle
+    Euripide
+    Eschyle
+    Plaute
+    Aristote
+    Aeschylus
+    Hésiode
+    Lucain
+    Sénèque
+    Philon
+    Térence
+    Hérodote
+    Xénophon
+    Plutarque
+    Pindare
+    Callimaque
+    Timée
+    Hécatée de Milet
+    Apollonius de Rhodes
+
+--- medecine
+
+    Hippocrate
+    Galien
+    Dioscoride
+    Pélops de Cos
+    Claudius Galenus
+    Erasistratus
+    Alcmaeon de Crotone
+    Pausanias
+    Hérophile
+    Sosigène
+    Philistion
+    Polybe
+    Xénophon
+    Théophraste
+    Philodème
+    Sôcrate
+    Pindare
+    Callimaque
+    Hésiode
+    Archiloque
+
+___________________________________________________
+
+- philosophie
+
+https://la-philosophie.com/
+
+Plato
+Aristotle
+René Descartes
+Immanuel Kant
+John Locke
+Jean-Jacques Rousseau
+Thomas Hobbes
+Friedrich Nietzsche
+Søren Kierkegaard
+John Stuart Mill
+Karl Marx
+Georg Wilhelm Friedrich Hegel
+Sigmund Freud
+Jean-Paul Sartre
+Martin Heidegger
+Michel Foucault
+Jean-François Lyotard
+Jacques Derrida
+Noam Chomsky
+Ayn Rand
+
+allemands:
+    Immanuel Kant
+    Georg Wilhelm Friedrich Hegel
+    Friedrich Nietzsche
+    Martin Heidegger
+    Karl Marx
+    Søren Kierkegaard
+    Johann Gottlieb Fichte
+    Arthur Schopenhauer
+    Max Weber
+    Georg Wilhelm Friedrich Hegel
+    Gottfried Wilhelm Leibniz
+    Wilhelm Dilthey
+    Edmund Husserl
+    Hermann von Helmholtz
+    Carl Gustav Hempel
+    Ernst Cassirer
+    Jacob Bernoulli
+    Gottlob Frege
+    Thomas Mann
+    Carl Jung
+    Hannah Arendt
+    Habermas
+    Sloterdijk
+
+- science
+
+    Albert Einstein
+    Isaac Newton
+    Galileo Galilei
+    Niels Bohr
+    Marie Curie
+    Max Planck
+    Leonardo da Vinci
+    William Thomson Kelvin
+    James Clerk Maxwell
+    Thomas Edison
+    Edwin Hubble
+    Paul Dirac
+    Michael Faraday
+    Henry Cavendish
+    Gregor Mendel
+    John Dalton
+    Antoine-Laurent Lavoisier
+    Sigmund Freud
+    Charles Darwin
+    Stephen Hawking
+    James Watt
+    Paul Samuelson
+    Alexander Graham Bell
+    Linus Pauling
+    Johann Sebastian Bach
+    Enrico Fermi
+    Erwin Schrödinger
+    Robert Oppenheimer
+    Francis Crick
+    James D. Watson
+
+    Isaac Newton
+    Albert Einstein
+    Galileo Galilei
+    Niels Bohr
+    Marie Curie
+    Stephen Hawking
+    Charles Darwin
+    Leonardo da Vinci
+    Alexander Graham Bell
+    Thomas Edison
+    James Clerk Maxwell
+    Ernest Rutherford
+    Louis Pasteur
+    Johannes Kepler
+    William Thomson Kelvin
+    Guglielmo Marconi
+    Michael Faraday
+    John Dalton
+    Gregor Mendel
+    Antoine Becquerel
+    Alfred Nobel
+    James Watt
+    Francis Crick
+    Rosalind Franklin
+    Enrico Fermi
+    Paul Dirac
+    Linus Pauling
+    Dmitri Mendeleev
+    Subrahmanyan Chandrasekhar
+    Erwin Schrödinger
+    John Bardeen
+    Albert A. Michelson
+    Wilhelm Röntgen
+    Theodore von Kármán
+    Robert H. Goddard
+    David Hilbert
+    Paul A. M. Dirac
+    Werner Heisenberg
+    Gerard K. O'Neill
+    Arnold Sommerfeld
+    Max Born
+    John von Neumann
+    Chien-Shiung Wu
+    George Washington Carver
+    Joseph Henry
+    Lise Meitner
+    John Archibald Wheeler
+    Edwin Hubble
+    Percy Spencer
+    J. Robert Oppenheimer
+
+    Thomas Edison
+    Alexander Graham Bell
+    James Watt
+    Eli Whitney
+    Henry Ford
+    Leonardo da Vinci
+    John Baird
+    John Napier
+    Blaise Pascal
+    George Stephenson
+    Antonio Meucci
+    John Harrison
+    George Westinghouse
+    Mary Shelley
+    George Boole
+    Ada Lovelace
+    Charles Goodyear
+    Tim Berners-Lee
+    Edward Jenner
+    John Dee
+    Nikola Tesla
+    J.J. Thomson
+    Max Planck
+
+- mathématiques
+
+donnes moi une liste de 50 mathématiciens, classé par ordre d'importance sur les critères de leur popularité et de leur influence sur le monde, sans donner de détails sur chacun.
+
+- politique
+
+donnes moi une liste de 50 hommes, classé par ordre d'importance sur les critères de leur popularité et de leur influence sur le monde concernat la politique, sans donner de détails sur chacun.
+
+- sociologie
+
+donnes moi une liste de 50 hommes, classé par ordre d'importance sur les critères de leur popularité et de leur influence sur le monde concernat la sociologie, sans donner de détails sur chacun.
+
+- histoire
+
+donnes moi une liste de 50 historiens, classé par ordre d'importance sur les critères de leur popularité et de leur influence sur le monde, sans donner de détails sur chacun.
+
+- littérature
+
+donnes moi une liste de 50 hommes, classé par ordre d'importance sur les critères de leur popularité et de leur influence sur le monde concernat la littérature, sans donner de détails sur chacun.
+
+
+- théâtre
+
+donnes moi une liste de 50 hommes, classé par ordre d'importance sur les critères de leur popularité et de leur influence sur le monde concernat le théâtre, sans donner de détails sur chacun.
+
+____________________________________________________
+
+
+berkley (etoile)
+bergson
+schopenhaeur
+schrödinger
