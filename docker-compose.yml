@@ -1,14 +1,26 @@
 version: '3.7'
 services:
-  history_db:
+  mongodb:
     image: mongo:4.4.6
-    container_name: history_db
+    container_name: mongodb_db
     environment:
-      MONGO_INITDB_ROOT_USERNAME: lumba
-      MONGO_INITDB_ROOT_PASSWORD: lumba
+      MONGO_INITDB_ROOT_USERNAME: mongo
+      MONGO_INITDB_ROOT_PASSWORD: password
     ports:
       - 27017:27017
     volumes:
-      - mongodb_data_container:/data/history_db
+      - mongodb_db:/data/db
+      - mongodb_configdb:/data/configdb
 volumes:
-  mongodb_data_container:
+  mongodb_db:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./mongodb-volume/db
+  mongodb_configdb:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./mongodb-volume/configdb
